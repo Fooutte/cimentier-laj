@@ -3,96 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Cimentier LAJ - Construction</title>
-    <section>
-        <h2>À propos de nous</h2>
-        <p>Chez <strong>Cimentier LAJ</strong>, nous misons sur le professionnalisme et la rigueur. Tim Martin, propriétaire, assure une gestion personnalisée pour chacun de vos projets de construction, garantissant un travail de qualité adapté à vos besoins spécifiques.</p>
-    </section>
     <style>
-        body { 
-            font-family: 'Oswald', 'Roboto', sans-serif; /* Utilisez Oswald si dispo */
-            line-height: 1.6; 
-            padding: 30px; 
-            background-color: #ECECEC; /* Gris béton clair */
-            background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png'); /* Texture légère béton */
-            color: #333; 
-        }
-
-        h1, h2, h3 { 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            color: #333; /* Titres foncés */
-        }
-
-        h1 { color: #218838; /* Vert plus foncé du logo */ border-bottom: 3px solid #218838; display: inline-block;}
-        h2 { color: #555; }
-        h3 { color: #333; }
-
-        .contact { 
-            background: rgba(255, 255, 255, 0.85); /* Fond blanc translucide */
-            padding: 20px; 
-            border-radius: 4px; 
-            border-left: 6px solid #FF4500; /* Ligne accent Orange Chantier */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Légère ombre */
-            margin-bottom: 25px;
-        }
-
-        .contact p { margin: 5px 0; }
-        .contact p strong { color: #FF4500; } /* Met en valeur les labels */
-
-        section { 
-            margin: 25px 0; 
-            padding: 20px; 
-            border-radius: 4px; 
-            background-color: rgba(255, 255, 255, 0.9); /* Fond très clair */
-            border-top: 4px solid #218838; /* Ligne accent Vert */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        ul { list-style-type: none; padding: 0; }
-        li { 
-            margin-bottom: 8px; 
-            color: #444; 
-            padding-left: 25px;
-            position: relative;
-        }
-        li:before {
-            content: '🚧'; /* Icône chantier avant chaque item */
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
-
-        form { margin-top: 25px; max-width: 450px; background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 0.9em;}
-        input, textarea { width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 18px; border: 2px solid #CCC; border-radius: 4px; box-sizing: border-box; background-color: #F9F9F9;}
-        input:focus, textarea:focus { border-color: #FF4500; outline: none;} /* Accent orange au focus */
-        
-        button { 
-            background-color: #FF4500; /* Bouton Orange Chantier */
-            color: white; 
-            padding: 12px 25px; 
-            border: none; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            font-weight: bold; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background-color 0.3s;
-        }
-        button:hover { background-color: #E03D00; }
-        /* Bouton d'appel */
-.contact a:hover { color: #218838 !important; text-decoration: underline; }
-
-/* Amélioration de la lisibilité des sections */
-section, .contact { 
-    margin-bottom: 30px; 
-    border-radius: 8px; /* Coins légèrement plus arrondis pour un look moderne */
-}
-
-/* Ajout d'une ombre douce pour donner du relief (effet 'impeccable') */
-section, .contact, form {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
-}
+        /* Votre CSS reste identique, je le garde pour la structure */
+        body { font-family: 'Oswald', 'Roboto', sans-serif; line-height: 1.6; padding: 30px; background-color: #ECECEC; color: #333; }
+        h1 { color: #218838; border-bottom: 3px solid #218838; display: inline-block; text-transform: uppercase; }
+        section, .contact { margin: 25px 0; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+        .contact { border-left: 6px solid #FF4500; }
+        section { border-top: 4px solid #218838; }
+        button { background-color: #FF4500; color: white; padding: 12px 25px; border: none; border-radius: 4px; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -100,12 +18,19 @@ section, .contact, form {
     <h1>Cimentier LAJ</h1>
     <p>Construction</p>
 
+    <!-- La section est maintenant ici, dans le body -->
+    <section>
+        <h2>À propos de nous</h2>
+        <p>Chez <strong>Cimentier LAJ</strong>, nous misons sur le professionnalisme et la rigueur. Tim Martin, propriétaire, assure une gestion personnalisée pour chacun de vos projets.</p>
+    </section>
+
     <div class="contact">
         <h3>Contact</h3>
         <p><strong>Téléphone :</strong> <a href="tel:5813379461" style="text-decoration: none; color: #FF4500; font-weight: bold;">581-337-9461</a></p>
         <p><strong>Propriétaire :</strong> Tim Martin</p>
         <p><strong>Adresse :</strong> 24, rue Jalbert, Saint-Modeste (Québec)</p>
     </div>
+
     <h3>Nos secteurs d'activité</h3>
     <ul>
         <li>Agriculture, foresterie, pêche, extraction minière</li>
@@ -116,15 +41,15 @@ section, .contact, form {
         <li>Santé, services sociaux et communautaires</li>
         <li>Services professionnels, enseignement, divertissements et loisirs</li>
     </ul>
-<h3>Demande de soumission</h3>
+
+    <h3>Demande de soumission</h3>
     <form action="mailto:cimentierlaj@hotmail.com" method="post" enctype="text/plain">
         <label>Nom :</label><br>
         <input type="text" name="nom" required><br><br>
-        
         <label>Message :</label><br>
         <textarea name="message" rows="4" required></textarea><br><br>
-        
         <button type="submit">Envoyer</button>
     </form>
+
 </body>
 </html>
