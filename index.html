@@ -8,17 +8,78 @@
         <p>Chez <strong>Cimentier LAJ</strong>, nous misons sur le professionnalisme et la rigueur. Tim Martin, propriétaire, assure une gestion personnalisée pour chacun de vos projets de construction, garantissant un travail de qualité adapté à vos besoins spécifiques.</p>
     </section>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
-        .contact { background: #f4f4f4; padding: 15px; border-radius: 5px; }
-        form { margin-top: 20px; max-width: 400px; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        ul { list-style-type: square; padding-left: 20px; }
-        li { margin-bottom: 5px; color: #555; }
-        h3 { color: #333; border-bottom: 2px solid #28a745; display: inline-block; }
-        section { margin: 20px 0; padding: 15px; border-left: 5px solid #28a745; background-color: #f9f9f9; }
-        h2 { margin-top: 0; color: #28a745; }
+        body { 
+            font-family: 'Oswald', 'Roboto', sans-serif; /* Utilisez Oswald si dispo */
+            line-height: 1.6; 
+            padding: 30px; 
+            background-color: #ECECEC; /* Gris béton clair */
+            background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png'); /* Texture légère béton */
+            color: #333; 
+        }
+
+        h1, h2, h3 { 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            color: #333; /* Titres foncés */
+        }
+
+        h1 { color: #218838; /* Vert plus foncé du logo */ border-bottom: 3px solid #218838; display: inline-block;}
+        h2 { color: #555; }
+        h3 { color: #333; }
+
+        .contact { 
+            background: rgba(255, 255, 255, 0.85); /* Fond blanc translucide */
+            padding: 20px; 
+            border-radius: 4px; 
+            border-left: 6px solid #FF4500; /* Ligne accent Orange Chantier */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Légère ombre */
+            margin-bottom: 25px;
+        }
+
+        .contact p { margin: 5px 0; }
+        .contact p strong { color: #FF4500; } /* Met en valeur les labels */
+
+        section { 
+            margin: 25px 0; 
+            padding: 20px; 
+            border-radius: 4px; 
+            background-color: rgba(255, 255, 255, 0.9); /* Fond très clair */
+            border-top: 4px solid #218838; /* Ligne accent Vert */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        ul { list-style-type: none; padding: 0; }
+        li { 
+            margin-bottom: 8px; 
+            color: #444; 
+            padding-left: 25px;
+            position: relative;
+        }
+        li:before {
+            content: '🚧'; /* Icône chantier avant chaque item */
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        form { margin-top: 25px; max-width: 450px; background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 0.9em;}
+        input, textarea { width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 18px; border: 2px solid #CCC; border-radius: 4px; box-sizing: border-box; background-color: #F9F9F9;}
+        input:focus, textarea:focus { border-color: #FF4500; outline: none;} /* Accent orange au focus */
+        
+        button { 
+            background-color: #FF4500; /* Bouton Orange Chantier */
+            color: white; 
+            padding: 12px 25px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+        button:hover { background-color: #E03D00; }
     </style>
 </head>
 <body>
